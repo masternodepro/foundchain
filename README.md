@@ -1,0 +1,2 @@
+# fchain
+FChain masternode resources
