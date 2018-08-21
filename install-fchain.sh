@@ -152,6 +152,9 @@ function enable_firewall()
 
   ufw disable >/dev/null 2>&1
   ufw allow ${PORT}/tcp comment "${COIN_NAME} Masternode port" >/dev/null 2>&1
+
+  ufw allow 22/tcp comment "SSH port" >/dev/null 2>&1
+  ufw limit 22/tcp >/dev/null 2>&1
   
   ufw logging on >/dev/null 2>&1
   ufw default deny incoming >/dev/null 2>&1
