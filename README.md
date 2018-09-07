@@ -128,6 +128,15 @@ If the above precautions are taken you will need to `su root` before running the
 
 &nbsp;
 
+## Re-indexing the node
+Because the node runs as a service, if you need or want to re-index it then there are a few steps that need to happen. In light of this, there is a simple script to perform all the steps required. All you need to do is run this command when logged in as the root user and answer 2 questions:
+```
+wget -q https://github.com/click2install/foundchain/raw/master/reindex-fchain.sh
+bash reindex-fchain.sh
+```
+
+&nbsp;
+
 ## Disclaimer
 Whilst effort has been put into maintaining and testing this script, it will automatically modify settings on your Ubuntu server - use at your own risk. By downloading this script you are accepting all responsibility for any actions it performs on your server.
 
