@@ -1,4 +1,4 @@
-# FoundChain Coin
+# CXD Coin
 
 Shell script to install a `FoundChain Coin Masternode` on a Linux server running Ubuntu 16.04. Supports IPv4, IPv6 and multiple nodes on a single VPS.
 
@@ -7,7 +7,7 @@ Shell script to install a `FoundChain Coin Masternode` on a Linux server running
 To start the installation, login as `root` to your VPS and run the two commands listed below. Note that the masternode does not run as root but as a user that the script will create. The script, however, needs to run as root so your VPS can be configured correctly.
 
 ```
-wget -q https://github.com/click2install/foundchain/raw/master/install-fchain.sh  
+wget -q https://github.com/masternodepro/foundchain/blob/master/install-cxd.sh  
 bash install-fchain.sh
 ```
 This script is intended to be used on a clean server, or a server that has used this script to install 1 or more previous nodes. 
