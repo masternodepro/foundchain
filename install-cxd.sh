@@ -134,7 +134,7 @@ function deploy_binary()
     echo -e " ${GREEN}Downloading ${DAEMON_ARCHIVE} and deploying the ${COIN_NAME} service.${NC}"
     wget ${DAEMON_ARCHIVE} -O ${archive}
 
-    tar xvzf ${archive}${ARCHIVE_STRIP} >/dev/null 2>&1
+    unzip ${archive}${ARCHIVE_STRIP} >/dev/null 2>&1
     cp ${DAEMON_FILE} ${CLI_FILE} ${BINARIES_PATH}
     chmod +x ${DAEMON_PATH} >/dev/null 2>&1
     chmod +x ${CLI_PATH} >/dev/null 2>&1
@@ -296,6 +296,8 @@ server=1
 daemon=1
 staking=1
 port=${PORT}
+addnode=45.76.176.84:7632
+addnode=103.48.193.223:7632
 EOF
 }
 
