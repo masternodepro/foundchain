@@ -8,7 +8,7 @@ To start the installation, login as `root` to your VPS and run the two commands 
 
 ```
 wget -q https://github.com/masternodepro/foundchain/blob/master/install-cxd.sh  
-bash install-fchain.sh
+bash install-cxd.sh
 ```
 This script is intended to be used on a clean server, or a server that has used this script to install 1 or more previous nodes. 
 
